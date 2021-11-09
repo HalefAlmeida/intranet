@@ -1,0 +1,17 @@
+<div class="container full-width">
+  <div class="header center"></div>
+  <div class="content flex center">
+    <mat-card class="width80 margin10" *ngFor="let comunicado of comunicados">
+      <mat-card-title>{{ comunicado.title }}</mat-card-title>
+      <mat-card-subtitle>{{ comunicado.category }}</mat-card-subtitle>
+      <mat-card-content
+        ><p>
+          {{ comunicado.description }}
+        </p></mat-card-content
+      >
+      <mat-card-actions>
+        <button mat-raised-button>Ver completo</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
